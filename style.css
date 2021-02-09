@@ -1,0 +1,15 @@
+/* .nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #D0D3D4;
+} */
+
+.navbar {
+    background-color: #002d62;
+}
+
+#logo {
+    height: 10vh;
+}
