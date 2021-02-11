@@ -2,8 +2,11 @@
     background-color: #002d62;
 }
 
-.logo {
+#logosm {
     max-height: 8.5vh;
+}
+#logomd {
+    max-height: 10vh;
 }
 
 .principal {
