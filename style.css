@@ -11,5 +11,18 @@
 }
 
 #logo {
-    height: 10vh;
+    max-height: 8.5vh;
+}
+
+#principal{
+    margin-top: 2vh;
+}
+
+#profilepic {
+    max-width: 90vw;
+}
+
+.text-justify {
+    font-style: italic ;
+    font-family: serif;
 }
