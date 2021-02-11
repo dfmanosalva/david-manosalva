@@ -20,9 +20,17 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-md navbar-dark blue">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand d-lg-none mx-auto" href="#">
+                        <img
+                            src="./Assets/Logo.png"
+                            alt="Logo"
+                            id="logo"
+                            class="d-inline-block align-top img-responsive"
+                        />
+                    </a>
+                    <a class="navbar-brand d-none d-lg-block" href="#">
                         <img
                             src="./Assets/Logo1.png"
                             alt="Logo"
@@ -30,18 +38,10 @@
                             class="d-inline-block align-top img-responsive"
                         />
                     </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+                    <div
+                        class="collapse navbar-collapse d-lg-none"
+                        id="navbarNav"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto align-items-center">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#about"
@@ -60,7 +60,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="#academic"
-                                    >School and jobs info</a
+                                    >Academic and Professional Info</a
                                 >
                             </li>
                         </ul>
@@ -69,43 +69,104 @@
             </nav>
         </header>
         <main>
-            <div class="container clearfix" id="principal">
-                <h1>Hello World</h1>
+            <section class="container clearfix principal">
                 <img
-                    src="./Assets/Logo.png"
-                    class="col-md-6 float-md-end mb-3 ms-md-3 img-responsive"
-                    alt="..."
+                    src="./Assets/Portrait.jpg"
+                    class="col-md-6 float-md-end mb-3 ms-md-3"
+                    alt="Portrait photo of myself"
                     id="profilepic"
                 />
-
-                <p>
-                    Donec ullamcorper nulla non metus auctor fringilla. Nulla
-                    vitae elit libero, a pharetra augue. Fusce dapibus, tellus
-                    ac cursus commodo, tortor mauris paddenstoel nibh, ut
-                    fermentum massa justo sit amet risus. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.
+                <h1 class="display-1" id="about">
+                    Welcome to my Webpage! <br />
+                    I'm David Manosalva
+                </h1>
+                <h2 class="display-3">About me!</h2>
+                <p class="lead">
+                    I'm a 20 year old Computer Science student at Los Andes
+                    University in Colombia
                 </p>
 
-                <p>
-                    Sed posuere consectetur est at lobortis. Etiam porta sem
-                    malesuada magna mollis euismod. Duis mollis, est non commodo
-                    luctus, nisi erat porttitor ligula, eget lacinia odio sem
-                    nec elit. Id nullam tellus relem amet commodo telemque
-                    olemit. Sed posuere consectetur est at lobortis. Maecenas
-                    sed diam eget risus varius blandit sit amet non magna. Cras
-                    justo odio, dapibus ac facilisis in, egestas eget quam.
+                <p class="text-align-justify">
+                    I was born in Bogotá in June 19th, 2000 and I have lived my
+                    entire life in Bogotá. I currently live with my family. I
+                    graduated from High School in 2017 and I'm in 8th semester
+                    of computer Science.
                 </p>
-
-                <p>
-                    Donec id elit non mi porta gravida at eget metus. Aenean eu
-                    leo quam. Pellentesque ornare sem lantaarnpaal quam
-                    venenatis vestibulum. Donec sed odio dui. Maecenas faucibus
-                    mollis interdum. Nullam quis risus eget urna salsa tequila
-                    vel eu leo. Donec id elit non mi porta gravida at eget
-                    metus.
+            </section>
+            <section class="container" id="projects">
+                <h2 class="display-3">Projects</h2>
+                <p class="lead">
+                    I've developed some project during my career including the
+                    next one
                 </p>
-            </div>
+                <h3>NeoTourism</h3>
+                <div class="videoWrapper">
+                    <iframe
+                        title="Neotourism video"
+                        src="https://www.youtube.com/embed/Et_AtM-mHl8"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+            <section class="container padding-bottom">
+                <h2 id="interests" class="display-3">
+                    Interests, hobbies and skills
+                </h2>
+                <p class="lead">
+                    Some of my interests are music, Ultimate Frisbee, and
+                    Formula 1
+                </p>
+                <h6 class="blockquote">Here is an album that I like</h6>
+                <div class="videoWrapper">
+                    <iframe
+                        title="How I'm Feeling album by Lauv on Spotify"
+                        src="https://open.spotify.com/embed/album/6EgJXcGqaUvgZIF9bqPXfP"
+                        width="300"
+                        height="380"
+                        allow="encrypted-media"
+                    ></iframe>
+                </div>
+            </section>
+            <section class="container padding-bottom" id="academic">
+                <h2 class="display-3">Academic and Professional Information</h2>
+                <h2>Academic Information</h2>
+                <p>
+                    <strong>High School: </strong>Gimnasio Campestre San Rafael
+                    (International Baccalaureate) <br />
+                    Undergraduate: Computer Science - Los Andes University
+                </p>
+                <h2>Professional Information</h2>
+                <p>
+                    <strong>August 2018 - December 2018: </strong>Teaching
+                    Assistant for Algorithmic and OOP<br />
+                    <strong>August 2020 - Currently: </strong>Teaching Assistant
+                    for Basic Finances (Management Control Systems)
+                </p>
+            </section>
         </main>
+        <footer>
+            <div class="container-fluid blue">
+                <div class="row">
+                    <div class="col">
+                        <p>© David Manosalva</p>
+                    </div>
+                    <div class="col text-end">
+                        <a
+                            class="navbar-brand text-white"
+                            href="https://www.linkedin.com/in/david-fernando-manosalva-59a9ba134/"
+                        >
+                            <img
+                                src="./Assets/linkedin.svg"
+                                alt="LinkedIn logo"
+                                height="20"
+                            />
+                            LinkedIn</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- JS used for Bootstrap -->
 
