@@ -2,7 +2,7 @@
     background-color: #002d62;
 }
 
-#logo {
+.logo {
     max-height: 8.5vh;
 }
 
@@ -43,6 +43,6 @@
     margin: 0;
 }
 
-.text-white{
+.text-white {
     color: #ffffff;
 }
